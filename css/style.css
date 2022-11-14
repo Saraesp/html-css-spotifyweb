@@ -19,7 +19,6 @@ body{
 /* distanze */
 .border-50{
     border-radius: 50%;
-    padding: px;
 }
 
 .padding-10{
@@ -34,6 +33,9 @@ body{
     margin: 10px 0;
 }
 
+.padding-icon{
+    padding: 5px 0;
+}
 /* stile testo */
 .text-white{
     color: white;
@@ -46,13 +48,14 @@ body{
     font-size: 10px;
 }
 
-.icon{
-    font-size: 15px;
+/* Logo */
+.logo-sm{
+    display: block;
+    max-height: 50px;
 }
 
-/* Logo */
-aside .logo{
-    width: 100%;
+.logo{
+    display: none;
 }
 /* divisione in sezioni */
 footer{
@@ -76,6 +79,7 @@ main{
     height: 100%;
     width: calc(100vw - 50px); 
     background-color: blue;
+    position: relative;
 }
 
 header{
@@ -106,47 +110,37 @@ header a{
     margin: 10px;
 }
 
-/* parte interna sidebar */
-aside div:first-child {
-    margin-bottom: calc(100vh - 200px);
-}
-
+/* BLOCCHI INTERNI ALLA SIDEBAR*/
 /* blocco superiore*/
-.style-list li{
-    font-size: 10px;
-    list-style-type: none;
-    line-height: 3;
+p, li, h3{
+    display: none;
 }
 
-.style-list .fa-plus{
-    background-color: grey;
-    padding: 8px;
-    font-size: 20px;
+.icon-smart{
+    display: block;
+    font-size: 18px;
 }
-
-.playlist p{
-    font-size: 12px;
-    font-weight: bolder;
-}
-
 /* blocco inferiore */
+.profile{
+    width: 145px;
+    position: absolute;
+    bottom: 100px;
+}
+
 .fa-arrow-down{
     border: 1px solid grey;
     font-size: 5px;
     padding: 2px;
 }
 
-.profile hr{
-    margin: 10px 0;
-    border-color:  rgb(80, 79, 79);
-    border-width: 0.5px
-}
-
 .profile img{
-    height: 20px;
-    background-color: grey;  
+    height: 25px;
+    background-color: grey; 
 }
 
+.profile p, hr{
+    display: none;
+}
 /* parte interna footer */
 footer div{
     background-color: aqua;
@@ -158,21 +152,66 @@ footer .margin-right{
 }
 
 /* MEDIA */
-/* Medium */
-@media screen and (min-width: 768px){
+/* Small */
+@media screen and (min-width: 576px){
     aside{
         width: 150px;
     }
 
     main{
         width: calc(100vw - 150px); 
+        position: relative;
     }
+
+    /* LOGO */
+    .logo-sm{
+        display: none;
+    }
+
+    .logo{
+        display: block;
+        width: 100%;
+    }
+
+    /*  SIDEBAR blocco superiore */
+    p, li, h3{
+        display: block;
+    }
+
+    .style-list li{
+        font-size: 10px;
+        list-style-type: none;
+        line-height: 3;
+    }
+    
+    .style-list .fa-plus{
+        background-color: grey;
+        padding: 8px;
+        font-size: 20px;
+    }
+
+    .playlist p{
+        font-size: 12px;
+        font-weight: bolder;
+    }
+
+    .line-height{
+        line-height: 2px;
+    }
+
+
+    /* SIDEBAR blocco inferiore */
+    .profile p, hr{
+        display: block;
+    }
+
+    .profile hr{
+        margin: 10px 0;
+        border-color:  rgb(80, 79, 79);
+        border-width: 0.5px
+    }    
+    
 }
 
-/* Small */
-@media screen and (min-width: 576px){
-}
 
-/* X - Small */
-@media screen and (min-width: 0px){
-}
+
