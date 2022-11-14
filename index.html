@@ -6,22 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Mukta+Malar:wght@800&family=Mukta+Vaani:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container flex">
+
+        <!-- SIDEBAR -->
         <aside>
-           <div></div>
-           <div></div>
+            <!-- Blocco superiore Sidebar -->
+            <img class="logo padding-10" src="./img/logo.svg" alt="">
+            <div class="style-list padding-10">
+               <nav>
+                   <ul>
+                       <li class="text-white"><i class="icon margin-right-5 text-white fa-solid fa-house"></i>Home</li>
+                       <li class="text-grey"><i class="icon margin-right-5 text-grey fa-solid fa-magnifying-glass"></i>Cerca</li>
+                       <li class="text-grey"><i class="icon margin-right-5 text-grey fa-solid fa-lines-leaning"></i>La tua libreria</li>
+                   </ul>
+               </nav>
+
+               <h3 class="text-white margin-10">PLAYLIST</h3>
+               <div class="playlist margin-10 flex align-center">
+                   <i class="icon margin-right-5 fa-solid fa-plus"></i>
+                   <p class="text-grey">Crea Playlist</p>
+               </div>
+               <nav>
+                   <ul>
+                       <li class="text-grey">Nome Playlist</li>
+                       <li class="text-grey">Nome Playlist</li>
+                       <li class="text-grey">Nome Playlist</li>
+                       <li class="text-grey">Nome Playlist</li>
+                       <li class="text-grey">Nome Playlist</li>
+                       <li class="text-grey">Nome Playlist</li>
+                   </ul>
+               </nav>
+           </div>
+           
+           <!-- Blocco inferiore della Sidebar -->
+           <div class="profile padding-10">
+               <p class="align-center  text-grey"><i class="border-50 margin-right-5 fa-solid fa-arrow-down"></i> Installa app</p>
+               <hr>
+               <div class="flex">
+                   <img class="border-50 margin-right-5" src="./img/profile.svg" alt=""> 
+                   <p class="text-white align-center">John Doe</p> 
+               </div>
+           </div>
        </aside>
 
        <main>
-           <header></header>
+        <!-- TOPBAR -->
+           <header class="flex"> 
+               <a href="">EFFETTUA L'UPGRADE</a>
+           </header>
+
+        <!-- Contenuto MAIN -->
            <div class="content">
 
            </div>
        </main>
     </div>
     <footer class="flex">
+        <!-- FOOTER -->
         <div class="margin-right"></div>
         <div class="margin-right"></div>
         <div></div>

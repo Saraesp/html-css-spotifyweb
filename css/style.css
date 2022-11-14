@@ -4,10 +4,56 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .flex{
     display: flex;
 }
 
+.align-center{
+    display: flex;
+    align-items: center;
+}
+/* distanze */
+.border-50{
+    border-radius: 50%;
+    padding: px;
+}
+
+.padding-10{
+    padding: 10px;
+}
+
+.margin-right-5{
+    margin-right: 5px;
+}
+
+.margin-10{
+    margin: 10px 0;
+}
+
+/* stile testo */
+.text-white{
+    color: white;
+    font-size: 12px;
+    font-weight:bolder ;
+}
+
+.text-grey{
+    color: grey;
+    font-size: 10px;
+}
+
+.icon{
+    font-size: 15px;
+}
+
+/* Logo */
+aside .logo{
+    width: 100%;
+}
 /* divisione in sezioni */
 footer{
     height: 100px;
@@ -22,13 +68,13 @@ footer{
 
 aside{
     width: 50px;
-    height: 100%;
-    background-color: red;
+    height: calc(100vh - 50px);
+    background-color: rgb(10, 9, 9);
 }
 
 main{
-    width: calc(100vw - 50px);
     height: 100%;
+    width: calc(100vw - 50px); 
     background-color: blue;
 }
 
@@ -37,6 +83,8 @@ header{
     background-color: rgba(0, 0, 0, 0.5) ;
     width: 100%;
     height: 50px;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .content{
@@ -46,14 +94,57 @@ header{
     overflow-y: auto;
 }
 
-/* parte interna sidebar */
-aside div {
-    height: 50px;
-    background-color: palevioletred;
+/* link upgrade */
+header a{
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 30px;
+    margin: 10px;
 }
 
+/* parte interna sidebar */
 aside div:first-child {
     margin-bottom: calc(100vh - 200px);
+}
+
+/* blocco superiore*/
+.style-list li{
+    font-size: 10px;
+    list-style-type: none;
+    line-height: 3;
+}
+
+.style-list .fa-plus{
+    background-color: grey;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.playlist p{
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+/* blocco inferiore */
+.fa-arrow-down{
+    border: 1px solid grey;
+    font-size: 5px;
+    padding: 2px;
+}
+
+.profile hr{
+    margin: 10px 0;
+    border-color:  rgb(80, 79, 79);
+    border-width: 0.5px
+}
+
+.profile img{
+    height: 20px;
+    background-color: grey;  
 }
 
 /* parte interna footer */
@@ -80,13 +171,6 @@ footer .margin-right{
 
 /* Small */
 @media screen and (min-width: 576px){
-    aside{
-        width: 150px;
-    }
-
-    main{
-        width: calc(100vw - 150px); 
-    }
 }
 
 /* X - Small */
