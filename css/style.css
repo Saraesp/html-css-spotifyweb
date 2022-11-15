@@ -82,6 +82,7 @@ aside{
     width: 50px;
     height: 100%;
     background-color: rgb(10, 9, 9);
+    position: relative;
 }
 
 main{
@@ -109,6 +110,7 @@ header{
 
 /* link upgrade */
 header a{
+    position: fixed;
     color: white;
     font-size: 10px;
     text-decoration: none;
@@ -131,7 +133,10 @@ p, li, h3{
 }
 /* blocco inferiore */
 .profile{
-    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: black;
     overflow: hidden;
 }
