@@ -18,8 +18,7 @@
             <img class="logo padding-10" src="./img/logo.svg" alt="">
             <img class="logo-sm padding-10" src="./img/logo-small.svg" alt="">
             <div class="style-list padding-10">
-
-                <div>
+                <div class="menu">
                     <div class="padding-icon flex">
                         <i class="icon-smart text-white margin-right-5 fa-solid fa-house"></i>
                         <p class="text-white ">Home</p>
@@ -33,27 +32,31 @@
                        <p class="text-grey">La tua libreria</p>
                     </div>
                 </div>
-
-               <h3 class="text-white margin-10">PLAYLIST</h3>
-               <div class="playlist margin-10 flex align-center">
-                   <i class="icon margin-right-5 fa-solid fa-plus"></i>
-                   <p class="text-grey">Crea Playlist</p>
-               </div>
-               <nav>
-                   <ul>
-                       <li class="text-grey">Nome Playlist</li>
-                       <li class="text-grey">Nome Playlist</li>
-                       <li class="text-grey">Nome Playlist</li>
-                       <li class="text-grey">Nome Playlist</li>
-                       <li class="text-grey">Nome Playlist</li>
-                       <li class="text-grey">Nome Playlist</li>
-                   </ul>
-               </nav>
+                <div class="playlist">
+                    <h3 class="text-white margin-10">PLAYLIST</h3>
+                    <div class="playlist margin-10 flex align-center">
+                        <i class="icon margin-right-5 fa-solid fa-plus"></i>
+                        <p class="text-grey">Crea Playlist</p>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li class="text-grey">Nome Playlist</li>
+                            <li class="text-grey">Nome Playlist</li>
+                            <li class="text-grey">Nome Playlist</li>
+                            <li class="text-grey">Nome Playlist</li>
+                            <li class="text-grey">Nome Playlist</li>
+                            <li class="text-grey">Nome Playlist</li>
+                        </ul>
+                    </nav>
+                </div>
            </div>
 
            <!-- Blocco inferiore della Sidebar -->
            <div class="profile padding-10">
-               <p class="text-grey"><i class="icon-smart icon margin-right-5 border-50 fa-solid fa-arrow-down"></i> Installa app</p>
+               <div class="flex">
+                   <i class="icon-smart icon margin-right-5 border-50 fa-solid fa-arrow-down"></i>
+                   <p class="text-grey">Installa app</p>
+               </div>
                <hr>
                <div class="flex">
                    <img class="border-50 margin-right-5" src="./img/profile.svg" alt=""> 
@@ -76,9 +79,54 @@
     </div>
     <footer class="flex">
         <!-- FOOTER -->
-        <div class="margin-right"></div>
-        <div class="margin-right"></div>
-        <div></div>
+        <div class="left-section">
+            <div class="info-music">
+                <img class="image" src="./img/sinister.jpeg" alt="">
+                <div>
+                    <span class="text-white">Sinister</span>
+                    <a href="">Brano Nome</a>
+                </div>
+            </div>
+            <div class="icons">
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-regular fa-folder"></i></a>
+            </div>
+        </div>
+
+        <div class="center-section">
+            <div class="button-play">
+                <ul class="style-buttom">
+                    <li><i class="fa-solid fa-shuffle"></i></li>
+                    <li><i class="fa-solid fa-caret-left"></i></li>
+                    <li><i class="fa-regular fa-circle-play"></i>
+                    <li><i class="fa-solid fa-caret-right"></i></li>
+                    <li><i class="fa-solid fa-rotate-right"></i></li>
+                </ul>
+            </div>
+
+            <div class="playlist-bar">
+                <div class="text-white time-min">0:25</div>
+                <div class="progress-bar">
+                    <div class="playlist-time">
+                        <div class="progress-bar-cursor"></div>
+                    </div>
+                </div>
+                <div class="text-white time-mx">4:35</div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="flex align-center">
+                <ul>
+                    <li><i class="text-grey fa-solid fa-list-ul"></i></li>
+                    <li><i class="text-grey fa-solid fa-desktop"></i></li>
+                    <li><i class="text-grey fa-solid fa-volume-high"></i></li>
+                </ul>
+                <div class="progress-bar-right">
+                    <div class="playlist-bar-right"></div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
